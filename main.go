@@ -23,7 +23,7 @@ type demo struct {
 func main() {
 	// コンテキストの作成
 	// バックグラウンドで接続する。タイムアウトは10秒
-	ctx, cancel := context.WithTimeout(context.Background(), 20*time.Second)
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 
 	// 関数を抜けたらクローズするようにする
 	defer cancel()
