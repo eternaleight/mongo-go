@@ -22,8 +22,8 @@ type demo struct {
 
 func main() {
 	// コンテキストの作成
-	// バックグラウンドで接続する。タイムアウトは10秒
-	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	// バックグラウンドで接続する。タイムアウトは5秒
+	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 
 	// 関数を抜けたらクローズするようにする
 	defer cancel()
